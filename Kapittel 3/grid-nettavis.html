@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <title>Nettavis</title>
+        <style>
+            .nyheter {
+                display: grid;
+                grid-template-columns: repeat(12, 1fr);
+                max-width: 80rem;
+                grid-auto-rows: minmax(12rem, 12rem);
+                gap: 1rem;
+            }
+
+            .nyheter a {
+                text-decoration: none;
+                background-color: #eee;
+                display: flex;
+                flex-direction: column;
+                font-family: sans-serif;
+            }
+
+            .nyheter h1 {
+                margin: 0;
+                flex-basis: 2em;
+                padding: 2px;
+                color: white;
+                background: rgba(128, 128, 128, 0.562);
+            }
+
+            .nyheter img {
+                width: 100%;
+                /*height: 8em;
+                flex-grow: 1;*/
+                /*object-fit: cover;
+                object-position: center;*/
+            }
+
+            /*
+            .tre-kolonner { grid-column: span 3; }
+            .fire-kolonner { grid-column: span 4; }
+            .seks-kolonner { grid-column: span 6; }
+            .to-rader { grid-row: span 2;}*/
+        </style>
+    </head>
+    <section class="nyheter">
+        <a href="#" class="seks-kolonner to-rader">
+            <img src="./bilder/demonstrasjon.jpg">
+            <h1>Demonstrasjoner i Washington</h1>
+        </a>
+        <a href="#" class="tre-kolonner">
+            <img src="./bilder/keeper.jpg">
+            <h1>Rett i klypene på keeper</h1>
+        </a>
+        <a href="#" class="tre-kolonner">
+            <img src="./bilder/reise.jpg">
+            <h1>Bruk munnbind på tur</h1>
+        </a>
+        <a href="#" class="tre-kolonner">
+            <img src="./bilder/hai.jpg">
+            <h1>Se opp for hai</h1>
+        </a>
+        <a href="#" class="tre-kolonner">
+            <img src="./bilder/vindmolle.jpg">
+            <h1>Spar penger med din egen vindmølle</h1>
+        </a>
+        <a href="#" class="fire-kolonner">
+            <img src="./bilder/hval.jpg">
+            <h1>Med hvalbiff på menyen</h1>
+        </a>
+        <a href="#" class="fire-kolonner">
+            <img src="./bilder/pasta.jpg">
+            <h1>Så lett er det å lage pastadeig!</h1>
+        </a>
+        <a href="#" class="fire-kolonner">
+            <img src="./bilder/yoga.jpg" >
+            <h1>Kom i form i din egen stue</h1>
+        </a>
+    </section>
+</html>
