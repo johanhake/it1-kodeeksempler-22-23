@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+		.nyheter {
+			display: grid;
+			grid-template-columns: repeat(12, 1fr);
+			max-width: 80rem;
+			grid-auto-rows: minmax(12rem, auto);
+			gap: 1rem;
+		}
+
+		.nyheter a {
+			background-color: #eee;
+		}
+
+		.tre-kolonner {
+			grid-column: span 1;
+		}
+
+		.fire-kolonner {
+			grid-column: span 1;
+		}
+
+		.seks-kolonner {
+			grid-column: span 1;
+		}
+
+		.to-rader {
+			grid-row: span 1;
+		}
+	</style>
+</head>
+
+<body>
+	<section class="nyheter">
+		<a href="#" class="seks-kolonner to-rader">Bilde og tekst</a>
+		<a href="#" class="tre-kolonner">Bilde og tekst</a>
+		<a href="#" class="tre-kolonner">Bilde og tekst</a>
+		<a href="#" class="tre-kolonner">Bilde og tekst</a>
+		<a href="#" class="tre-kolonner">Bilde og tekst</a>
+		<a href="#" class="fire-kolonner">Bilde og tekst</a>
+		<a href="#" class="fire-kolonner">Bilde og tekst</a>
+		<a href="#" class="fire-kolonner">Bilde og tekst</a>
+	</section>
+
+</body>
+
+</html>
