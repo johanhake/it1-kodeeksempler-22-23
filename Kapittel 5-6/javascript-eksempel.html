@@ -13,10 +13,10 @@
 </head>
 <body>
 	<h1>Eksempel på dynamisk Nettside med JavaScript</h1>
-	<p>Jeg liker: <span id="txtLiker"></span></p>
+	<p>Jeg liker: <span id="txtLiker">koding</span></p>
 	<label for="">Hva liker du?</label><br>
-	<input type="text" id="inpLiker"><br>
-	<button onclick="hvaLikerJeg()">Liker</button>
+	<input type="text" id="inpLiker" value="koding" oninput="hvaLikerJeg()"><br>
+
 </body>
 <script>
 	function hvaLikerJeg(){
